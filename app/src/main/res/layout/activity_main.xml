@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txvDisplay"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textAlignment="textEnd"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+    <Button
+        android:id="@+id/btnMC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="MC"
+        app:layout_constraintEnd_toStartOf="@+id/btnMR"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <Button
+        android:id="@+id/btnMR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="MR"
+        app:layout_constraintEnd_toStartOf="@+id/btnMPlus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMC"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <Button
+        android:id="@+id/btnMPlus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="M+"
+        app:layout_constraintEnd_toStartOf="@+id/btnMMinus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnMR"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <Button
+        android:id="@+id/btnMMinus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="M-"
+        app:layout_constraintEnd_toStartOf="@+id/btnMS"
+        app:layout_constraintStart_toEndOf="@+id/btnMPlus"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <Button
+        android:id="@+id/btnMS"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:text="MS"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+</android.support.constraint.ConstraintLayout>
